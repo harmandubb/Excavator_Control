@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/modules/hal/cmsis/CMSIS
+# Install script for directory: C:/ncs/v2.6.1/modules/hal/cmsis/CMSIS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/cmsis/cmsis/CMSIS/Core/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cmsis/cmsis/CMSIS/Core/cmake_install.cmake")
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/zephyr/subsys/fs
+# Install script for directory: C:/ncs/v2.6.1/zephyr/subsys/fs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

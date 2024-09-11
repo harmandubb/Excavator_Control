@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/zephyr
+# Install script for directory: C:/ncs/v2.6.1/zephyr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,231 +39,231 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/arch/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/arch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/soc/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/boards/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/subsys/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/subsys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/drivers/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/drivers/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/wfa-qt-control-app/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/mcuboot/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/mbedtls/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/trusted-firmware-m/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/trusted-firmware-m/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cjson/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/cjson/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/azure-sdk-for-c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/azure-sdk-for-c/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cirrus-logic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/cirrus-logic/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/openthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/openthread/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/memfault-firmware-sdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/memfault-firmware-sdk/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/canopennode/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/canopennode/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/chre/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/chre/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/lz4/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/cmsis/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nanopb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/fatfs/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/zscilib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/hal_nordic/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cmsis/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/st/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cmsis-dsp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/hal_wurthelektronik/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/cmsis-nn/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/libmetal/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/fatfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/liblc3/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/hal_nordic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/littlefs/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/st/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/loramac-node/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/hal_wurthelektronik/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/lvgl/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/libmetal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/lz4/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/liblc3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/mipi-sys-t/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/littlefs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nanopb/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/loramac-node/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf_hw_models/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/lvgl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/open-amp/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/mipi-sys-t/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/picolibc/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf_hw_models/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/segger/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/open-amp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/tinycrypt/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/picolibc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/TraceRecorder/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/segger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/uoscore-uedhoc/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/tinycrypt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/zcbor/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/uoscore-uedhoc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/zscilib/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/zcbor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrfxlib/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrfxlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/connectedhomeip/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/connectedhomeip/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/kernel/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/kernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/cmake/flash/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/cmake/flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/cmake/usage/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/cmake/usage/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/cmake/reports/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/cmake/reports/cmake_install.cmake")
 endif()
 

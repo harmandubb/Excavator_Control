@@ -33,11 +33,19 @@ uintptr_t z_mrsh_z_sys_mutex_kernel_unlock(uintptr_t arg1, uintptr_t arg2, uintp
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
-uintptr_t z_mrsh_z_log_msg_static_create(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+uintptr_t z_mrsh_z_log_msg_simple_create_0(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
-uintptr_t z_mrsh_z_log_msg_runtime_vcreate(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+uintptr_t z_mrsh_z_log_msg_simple_create_1(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_z_log_msg_simple_create_2(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_z_log_msg_static_create(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
@@ -94,6 +102,26 @@ uintptr_t z_mrsh_gpio_port_toggle_bits(uintptr_t arg1, uintptr_t arg2, uintptr_t
 
 __weak ALIAS_OF(handler_no_syscall)
 uintptr_t z_mrsh_gpio_get_pending_int(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_pwm_set_cycles(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_pwm_get_cycles_per_sec(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_pwm_enable_capture(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_pwm_disable_capture(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_pwm_capture_cycles(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
@@ -241,7 +269,7 @@ uintptr_t z_mrsh_k_wakeup(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
-uintptr_t z_mrsh_z_current_get(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+uintptr_t z_mrsh_k_sched_current_thread_query(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
@@ -579,8 +607,10 @@ const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
 	[K_SYSCALL_CLOCK_GETTIME] = z_mrsh_clock_gettime,
 	[K_SYSCALL_Z_SYS_MUTEX_KERNEL_LOCK] = z_mrsh_z_sys_mutex_kernel_lock,
 	[K_SYSCALL_Z_SYS_MUTEX_KERNEL_UNLOCK] = z_mrsh_z_sys_mutex_kernel_unlock,
+	[K_SYSCALL_Z_LOG_MSG_SIMPLE_CREATE_0] = z_mrsh_z_log_msg_simple_create_0,
+	[K_SYSCALL_Z_LOG_MSG_SIMPLE_CREATE_1] = z_mrsh_z_log_msg_simple_create_1,
+	[K_SYSCALL_Z_LOG_MSG_SIMPLE_CREATE_2] = z_mrsh_z_log_msg_simple_create_2,
 	[K_SYSCALL_Z_LOG_MSG_STATIC_CREATE] = z_mrsh_z_log_msg_static_create,
-	[K_SYSCALL_Z_LOG_MSG_RUNTIME_VCREATE] = z_mrsh_z_log_msg_runtime_vcreate,
 	[K_SYSCALL_LOG_PANIC] = z_mrsh_log_panic,
 	[K_SYSCALL_LOG_PROCESS] = z_mrsh_log_process,
 	[K_SYSCALL_LOG_BUFFERED_CNT] = z_mrsh_log_buffered_cnt,
@@ -595,6 +625,11 @@ const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
 	[K_SYSCALL_GPIO_PORT_CLEAR_BITS_RAW] = z_mrsh_gpio_port_clear_bits_raw,
 	[K_SYSCALL_GPIO_PORT_TOGGLE_BITS] = z_mrsh_gpio_port_toggle_bits,
 	[K_SYSCALL_GPIO_GET_PENDING_INT] = z_mrsh_gpio_get_pending_int,
+	[K_SYSCALL_PWM_SET_CYCLES] = z_mrsh_pwm_set_cycles,
+	[K_SYSCALL_PWM_GET_CYCLES_PER_SEC] = z_mrsh_pwm_get_cycles_per_sec,
+	[K_SYSCALL_PWM_ENABLE_CAPTURE] = z_mrsh_pwm_enable_capture,
+	[K_SYSCALL_PWM_DISABLE_CAPTURE] = z_mrsh_pwm_disable_capture,
+	[K_SYSCALL_PWM_CAPTURE_CYCLES] = z_mrsh_pwm_capture_cycles,
 	[K_SYSCALL_UART_ERR_CHECK] = z_mrsh_uart_err_check,
 	[K_SYSCALL_UART_POLL_IN] = z_mrsh_uart_poll_in,
 	[K_SYSCALL_UART_POLL_IN_U16] = z_mrsh_uart_poll_in_u16,
@@ -631,7 +666,7 @@ const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
 	[K_SYSCALL_K_BUSY_WAIT] = z_mrsh_k_busy_wait,
 	[K_SYSCALL_K_YIELD] = z_mrsh_k_yield,
 	[K_SYSCALL_K_WAKEUP] = z_mrsh_k_wakeup,
-	[K_SYSCALL_Z_CURRENT_GET] = z_mrsh_z_current_get,
+	[K_SYSCALL_K_SCHED_CURRENT_THREAD_QUERY] = z_mrsh_k_sched_current_thread_query,
 	[K_SYSCALL_K_THREAD_ABORT] = z_mrsh_k_thread_abort,
 	[K_SYSCALL_K_THREAD_START] = z_mrsh_k_thread_start,
 	[K_SYSCALL_K_THREAD_TIMEOUT_EXPIRES_TICKS] = z_mrsh_k_thread_timeout_expires_ticks,

@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/modules/crypto/tinycrypt
+# Install script for directory: C:/ncs/v2.6.1/modules/crypto/tinycrypt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

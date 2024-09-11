@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/nrf/drivers
+# Install script for directory: C:/ncs/v2.6.1/nrf/drivers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/drivers/hw_cc310/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/drivers/hw_cc3xx/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/drivers/entropy/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/drivers/entropy/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/drivers/serial/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/drivers/serial/cmake_install.cmake")
 endif()
 

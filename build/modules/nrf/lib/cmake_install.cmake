@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/nrf/lib
+# Install script for directory: C:/ncs/v2.6.1/nrf/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/lib/bin/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/lib/bin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/lib/flash_patch/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/lib/flash_patch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/lib/fatal_error/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/lib/fatal_error/cmake_install.cmake")
 endif()
 

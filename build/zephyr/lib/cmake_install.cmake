@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/zephyr/lib
+# Install script for directory: C:/ncs/v2.6.1/zephyr/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,26 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/crc/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/crc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/libc/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/libc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/posix/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/posix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/hash/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/hash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/zephyr/lib/os/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/zephyr/lib/os/cmake_install.cmake")
 endif()
 

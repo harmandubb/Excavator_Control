@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/v2.5.3/nrf/samples/common
+# Install script for directory: C:/ncs/v2.6.1/nrf/samples/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/bhupi/Git_Projects/Docstruction/Excavator_Control/nrf/build/modules/nrf/samples/common/mcumgr_bt_ota_dfu/cmake_install.cmake")
+  include("C:/Users/Harman/Git_Projects/Excavator_Control/build/modules/nrf/samples/common/mcumgr_bt_ota_dfu/cmake_install.cmake")
 endif()
 
