@@ -40,6 +40,8 @@ extern "C" {
 #define BOOM_PIN2 (7)
 #define BOOM_PWM (6)
 
+#define NUM_ARM_MOTORS (3)
+
 #define PWM_PERIOD (10000)
 
 //Struct definitions
@@ -53,7 +55,7 @@ typedef struct {
 
 // Function prototypes
 
-motor_pwm_specs_t init_pwm_motors(void);
+motor_pwm_specs_t initArmMotors(struct device *gpio_dt, int cp1_arr[], int cp2_arr[], int num_motors);
 int updateArmDutyCycles(motor_pwm_specs_t *motors, int bucket_duty_cycle, int arm_duty_cycle, int boom_duty_cycle);
 
 

@@ -17,7 +17,7 @@ motor_pwm_specs_t motors;
  * @return error if present
  */
 
-int motorSetup(struct device *gpio_dt, struct pwm_dt_spec pwm_dt, int control_pin1, int control_pin2, int pwm_pin){
+static int motorSetup(struct device *gpio_dt, int control_pin1, int control_pin2){
     int err = 0;
     //initialize the gpio as needed 
 
@@ -33,21 +33,7 @@ int motorSetup(struct device *gpio_dt, struct pwm_dt_spec pwm_dt, int control_pi
         return err;
     }
 
-     // Configure PWM
-    if (!device_is_ready(pwm_dt.dev)) {
-        printk("Error: PWM device is not ready\n");
-        return -ENODEV;
-    }
-    
-
-    // Initialize PWM with 0% duty cycle (motor stopped)
-    err = pwm_set_dt(&pwm_dt, PMW_PERIOD, 0);
-    if (err < 0) {
-        printk("Error initializing PWM\n");
-        return err;
-    }
-
-    printk("Motor setup completed successfully\n");
+    LOG_INF("Motor control pin setup completed successfully\n");
     return 0;
 
 };
@@ -58,7 +44,7 @@ int motorSetup(struct device *gpio_dt, struct pwm_dt_spec pwm_dt, int control_pi
  * @return motor_pwm_specs_t return of all of the amr movement motors
  */
 
-motor_pwm_specs_t init_pwm_motors(void)
+static motor_pwm_specs_t init_pwm_motors(void)
 {
     // Initialize the motors from DeviceTree using the correct method of initialization
     motor_pwm_specs_t motors = {
@@ -82,6 +68,26 @@ motor_pwm_specs_t init_pwm_motors(void)
 
     // Return the structure containing the initialized PWM motors
     return motors;
+};
+
+/** @brief Single function to fully initialize all motor pins for the arm (control + pwm)
+ *  
+ *  @param struct device *gpio_dt: struct holding gpio device tree information for the control pins 
+ *  @param int cp1_arr : Array holding control pin 1 for the motors to activiate 
+ *  @param int cp2_arr : Arry holding control pin 2 for the motors to activate 
+ *  @param int num_motors: number of motors to activate in this funciton
+ *  
+ *  @return motor_pwm_specs_t struct containing all of the motor dt specs  
+ * 
+ */
+
+motor_pwm_specs_t initArmMotors(struct device *gpio_dt, int cp1_arr[], int cp2_arr[], int num_motors){
+
+    for(int i = 0; i < num_motors; i++){
+        motorSetup(gpio_dt, cp1_arr[i], cp2_arr[i]);
+    }
+
+    return init_pwm_motors();
 };
 
 /** @brief update pwm duty cycle of arm motors 

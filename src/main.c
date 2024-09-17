@@ -28,7 +28,10 @@ int main(void)
                 LOG_INF("GPIO device binding success\n");
         }
 
-        motor_pwm_specs_t motors_pwm = init_pwm_motors();
+        int cp1_arr[] = {BUCKET_PIN1, ARM_PIN1, BOOM_PIN1};
+        int cp2_arr[] = {BUCKET_PIN2, ARM_PIN2, BOOM_PIN2};
+
+        motor_pwm_specs_t motors_pwm = initArmMotors(gpio1_dt,cp1_arr, cp2_arr,NUM_ARM_MOTORS);
 
 
 
