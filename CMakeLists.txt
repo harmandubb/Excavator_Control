@@ -9,4 +9,6 @@ target_sources(app PRIVATE
         src/motor.h
         src/sensor.c
         src/sensor.h
+        src/adc.c
+        src/adc.h
         )

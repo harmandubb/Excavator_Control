@@ -4,7 +4,6 @@ LOG_MODULE_REGISTER(Sensor, LOG_LEVEL_INF);
 
 //Global Variables
 
-
 /** @brief Sets up a sensor pin for input 
  * 
  *  @param struct device gpio_dt: device tree spec for the gpio group used
@@ -54,4 +53,6 @@ int sensorArraySetup(struct device *gpio_dt, int *sensor_pins, int num_pins) {
     LOG_INF("All sensor pins setup completed successfully\n");
     return 0;
 }
+
+
 
