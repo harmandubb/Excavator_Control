@@ -6,6 +6,7 @@
     "files.associations": {
         "gpio.h": "c",
         "motor.h": "c",
-        "pwm.h": "c"
+        "pwm.h": "c",
+        "log.h": "c"
     }
 }

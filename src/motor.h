@@ -19,6 +19,7 @@ extern "C" {
 #include <zephyr/logging/log.h>
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/pwm.h>
+#include <zephyr/devicetree.h>
 
 
 //#defines
@@ -41,7 +42,16 @@ extern "C" {
 
 //Struct definitions
 
+// Define a typedef for the motor PWM specs structure
+typedef struct {
+    struct pwm_dt_spec pwm_motor0;
+    struct pwm_dt_spec pwm_motor1;
+    struct pwm_dt_spec pwm_motor2;
+} motor_pwm_specs_t;  // This typedef allows us to use "motor_pwm_specs_t" instead of "struct motor_pwm_specs"
+
 // Function prototypes
+
+motor_pwm_specs_t init_pwm_motors(void);
 
 
 #ifdef __cplusplus
