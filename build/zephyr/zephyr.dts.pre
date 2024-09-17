@@ -1206,14 +1206,14 @@ zephyr_udc0: &usbd {
     pwmmotors {
         compatible = "pwm-leds";
         pwm_motor0: pwm_motor_0 {
-            pwms = <&pwm0 0 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+            pwms = <&pwm0 0 (10000) (0 << 0)>;
         };
         pwm_motor1: pwm_motor_1 {
-            pwms = <&pwm0 1 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+            pwms = <&pwm0 1 (10000) (0 << 0)>;
         };
 
         pwm_motor2: pwm_motor_2 {
-            pwms = <&pwm0 2 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+            pwms = <&pwm0 2 (10000) (0 << 0)>;
         };
     };
 };

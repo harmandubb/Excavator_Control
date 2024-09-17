@@ -53,9 +53,9 @@ int motorSetup(struct device *gpio_dt, struct pwm_dt_spec pwm_dt, int control_pi
 };
 
 /**
- * @brief enable the pins and outputs for all motors (two input pins and 1 pwm pin each)
+ * @brief gets struct of motor pwm pins set to be used
  * 
- * @return error if present
+ * @return motor_pwm_specs_t return of all of the amr movement motors
  */
 
 motor_pwm_specs_t init_pwm_motors(void)
@@ -83,4 +83,43 @@ motor_pwm_specs_t init_pwm_motors(void)
     // Return the structure containing the initialized PWM motors
     return motors;
 };
+
+/** @brief update pwm duty cycle of arm motors 
+ * 
+ *  @param motor_pwm_specs_t struct containing all of the arm motor dt specs
+ *  @param bucket_duty_cycle
+ *  @param arm_duty_cycle
+ *  @param boom_duty_cycle
+ * 
+ *  @return error if present
+ */
+
+int updateArmDutyCycles(motor_pwm_specs_t *motors, int bucket_duty_cycle, int arm_duty_cycle, int boom_duty_cycle) {
+    int err = 0;
+
+    // Set PWM for bucket motor
+    err = pwm_set_pulse_dt(&(motors->pwm_motor0), bucket_duty_cycle);
+    if (err < 0) {
+        LOG_ERR("Failed to set bucket motor PWM: %d", err);
+        return err;  // Return error code if setting PWM failed
+    }
+
+    // Set PWM for arm motor
+    err = pwm_set_pulse_dt(&(motors->pwm_motor1), arm_duty_cycle);
+    if (err < 0) {
+        LOG_ERR("Failed to set arm motor PWM: %d", err);
+        return err;  // Return error code if setting PWM failed
+    }
+
+    // Set PWM for boom motor
+    err = pwm_set_pulse_dt(&(motors->pwm_motor2), boom_duty_cycle);
+    if (err < 0) {
+        LOG_ERR("Failed to set boom motor PWM: %d", err);
+        return err;  // Return error code if setting PWM failed
+    }
+
+    LOG_INF("Motor duty cycles updated successfully");
+
+    return 0;  // Return 0 on success
+}
 

@@ -40,6 +40,8 @@ extern "C" {
 #define BOOM_PIN2 (7)
 #define BOOM_PWM (6)
 
+#define PWM_PERIOD (10000)
+
 //Struct definitions
 
 // Define a typedef for the motor PWM specs structure
@@ -52,6 +54,7 @@ typedef struct {
 // Function prototypes
 
 motor_pwm_specs_t init_pwm_motors(void);
+int updateArmDutyCycles(motor_pwm_specs_t *motors, int bucket_duty_cycle, int arm_duty_cycle, int boom_duty_cycle);
 
 
 #ifdef __cplusplus

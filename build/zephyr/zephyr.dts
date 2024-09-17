@@ -804,13 +804,13 @@
 	pwmmotors {
 		compatible = "pwm-leds";
 		pwm_motor0: pwm_motor_0 {
-			pwms = < &pwm0 0x0 0x1312d00 0x0 >;
+			pwms = < &pwm0 0x0 0x2710 0x0 >;
 		};
 		pwm_motor1: pwm_motor_1 {
-			pwms = < &pwm0 0x1 0x1312d00 0x0 >;
+			pwms = < &pwm0 0x1 0x2710 0x0 >;
 		};
 		pwm_motor2: pwm_motor_2 {
-			pwms = < &pwm0 0x2 0x1312d00 0x0 >;
+			pwms = < &pwm0 0x2 0x2710 0x0 >;
 		};
 	};
 };

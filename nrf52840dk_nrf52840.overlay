@@ -23,14 +23,14 @@
     pwmmotors {
         compatible = "pwm-leds";
         pwm_motor0: pwm_motor_0 {
-            pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+            pwms = <&pwm0 0 PWM_NSEC(10000) PWM_POLARITY_NORMAL>;
         };
         pwm_motor1: pwm_motor_1 {
-            pwms = <&pwm0 1 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+            pwms = <&pwm0 1 PWM_NSEC(10000) PWM_POLARITY_NORMAL>;
         };
 
         pwm_motor2: pwm_motor_2 {
-            pwms = <&pwm0 2 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+            pwms = <&pwm0 2 PWM_NSEC(10000) PWM_POLARITY_NORMAL>;
         };
     };
 };
