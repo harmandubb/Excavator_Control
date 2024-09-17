@@ -7,4 +7,6 @@ target_sources(app PRIVATE
         src/main.c
         src/motor.c
         src/motor.h
+        src/sensor.c
+        src/sensor.h
         )
