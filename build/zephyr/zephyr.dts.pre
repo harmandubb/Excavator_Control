@@ -1192,4 +1192,58 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
+# 1 "C:/Users/Harman/Git_Projects/Excavator_Control/nrf52840dk_nrf52840.overlay" 1
+# 14 "C:/Users/Harman/Git_Projects/Excavator_Control/nrf52840dk_nrf52840.overlay"
+/{
+
+    aliases {
+        pwm-motor0 = &pwm_motor0;
+        pwm-motor1 = &pwm_motor1;
+        pwm-motor2 = &pwm_motor2;
+
+    };
+
+    pwmmotors {
+        compatible = "pwm-leds";
+        pwm_motor0: pwm_motor_0 {
+            pwms = <&pwm0 0 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+        };
+        pwm_motor1: pwm_motor_1 {
+            pwms = <&pwm0 1 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+        };
+
+        pwm_motor2: pwm_motor_2 {
+            pwms = <&pwm0 2 (((20) * 1000UL) * 1000UL) (0 << 0)>;
+        };
+    };
+};
+
+
+&pwm0 {
+    status = "okay";
+    pinctrl-0 = <&pwm0_custom>;
+    pinctrl-1 = <&pwm0_csleep>;
+    pinctrl-names = "default", "sleep";
+};
+
+
+&pinctrl {
+    pwm0_custom: pwm0_custom {
+        group1 {
+            psels = <((((((1) * 32U) + (13)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>,
+                    <((((((1) * 32U) + (10)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>,
+                    <((((((1) * 32U) + (6)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>;
+        };
+    };
+
+    pwm0_csleep: pwm0_csleep {
+        group1 {
+            psels = <((((((1) * 32U) + (13)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>,
+                    <((((((1) * 32U) + (10)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>,
+                    <((((((1) * 32U) + (6)) & 0x7FU) << 0U) | ((22U & 0xFFFFU) << 16U))>;
+            low-power-enable;
+        };
+    };
+};
+# 0 "<command-line>" 2
 # 1 "C:/ncs/v2.6.1/zephyr/misc/empty_file.c"

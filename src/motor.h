@@ -26,6 +26,19 @@ extern "C" {
 #define PWM_FREQEUNCY (100000)
 #define PMW_PERIOD (10000) //ns
 
+// Grouping the motor pins for the excavator together 
+#define BUCKET_PIN1 (15)
+#define BUCKET_PIN2 (14)
+#define BUCKET_PWM (13)
+
+#define ARM_PIN1 (12)
+#define ARM_PIN2 (21)
+#define ARM_PWM (10)
+
+#define BOOM_PIN1 (8)
+#define BOOM_PIN2 (7)
+#define BOOM_PWM (6)
+
 //Struct definitions
 
 // Function prototypes

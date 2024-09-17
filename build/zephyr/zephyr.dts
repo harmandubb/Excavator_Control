@@ -33,6 +33,9 @@
 		mcuboot-led0 = &led0;
 		watchdog0 = &wdt0;
 		spi-flash0 = &mx25r64;
+		pwm-motor0 = &pwm_motor0;
+		pwm-motor1 = &pwm_motor1;
+		pwm-motor2 = &pwm_motor2;
 	};
 	soc {
 		#address-cells = < 0x1 >;
@@ -346,8 +349,8 @@
 			interrupts = < 0x1c 0x1 >;
 			status = "okay";
 			#pwm-cells = < 0x3 >;
-			pinctrl-0 = < &pwm0_default >;
-			pinctrl-1 = < &pwm0_sleep >;
+			pinctrl-0 = < &pwm0_custom >;
+			pinctrl-1 = < &pwm0_csleep >;
 			pinctrl-names = "default", "sleep";
 			phandle = < 0x1a >;
 		};
@@ -614,14 +617,12 @@
 			};
 		};
 		pwm0_default: pwm0_default {
-			phandle = < 0xc >;
 			group1 {
 				psels = < 0x16000d >;
 				nordic,invert;
 			};
 		};
 		pwm0_sleep: pwm0_sleep {
-			phandle = < 0xd >;
 			group1 {
 				psels = < 0x16000d >;
 				low-power-enable;
@@ -695,6 +696,19 @@
 			phandle = < 0x16 >;
 			group1 {
 				psels = < 0x4002f >, < 0x6002e >, < 0x5002d >;
+				low-power-enable;
+			};
+		};
+		pwm0_custom: pwm0_custom {
+			phandle = < 0xc >;
+			group1 {
+				psels = < 0x16002d >, < 0x16002a >, < 0x160026 >;
+			};
+		};
+		pwm0_csleep: pwm0_csleep {
+			phandle = < 0xd >;
+			group1 {
+				psels = < 0x16002d >, < 0x16002a >, < 0x160026 >;
 				low-power-enable;
 			};
 		};
@@ -786,5 +800,17 @@
 		compatible = "arduino,uno-adc";
 		#io-channel-cells = < 0x1 >;
 		io-channel-map = < 0x0 &adc 0x1 >, < 0x1 &adc 0x2 >, < 0x2 &adc 0x4 >, < 0x3 &adc 0x5 >, < 0x4 &adc 0x6 >, < 0x5 &adc 0x7 >;
+	};
+	pwmmotors {
+		compatible = "pwm-leds";
+		pwm_motor0: pwm_motor_0 {
+			pwms = < &pwm0 0x0 0x1312d00 0x0 >;
+		};
+		pwm_motor1: pwm_motor_1 {
+			pwms = < &pwm0 0x1 0x1312d00 0x0 >;
+		};
+		pwm_motor2: pwm_motor_2 {
+			pwms = < &pwm0 0x2 0x1312d00 0x0 >;
+		};
 	};
 };

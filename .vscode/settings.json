@@ -4,6 +4,8 @@
     ],
     "nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.6.1}",
     "files.associations": {
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "motor.h": "c",
+        "pwm.h": "c"
     }
 }

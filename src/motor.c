@@ -58,7 +58,11 @@ int motorSetup(struct device *gpio_dt, struct pwm_dt_spec pwm_dt, int control_pi
  * @return error if present
  */
 
-int excavatorMotorSetup(void) {
+int excavatorTotalArmSetup(void) {
     //call the motorSetUp Function the appriprooate amount of times with the correct inputs
-}
+    // motorSetup(); //Bucket
+    // motorSetup(); //Arm
+    // motorSetup(); //Boom
+    return 0;
+};
 

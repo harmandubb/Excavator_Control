@@ -24,4 +24,5 @@ empty_file.o: C:/ncs/v2.6.1/zephyr/misc/empty_file.c \
  C:/ncs/v2.6.1/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
  C:/ncs/v2.6.1/zephyr/dts/common/freq.h \
  C:/ncs/v2.6.1/zephyr/dts/arm/nordic/override.dtsi \
- C:/ncs/v2.6.1/zephyr/boards/arm/nrf52840dk_nrf52840/nrf52840dk_nrf52840-pinctrl.dtsi
+ C:/ncs/v2.6.1/zephyr/boards/arm/nrf52840dk_nrf52840/nrf52840dk_nrf52840-pinctrl.dtsi \
+ C:/Users/Harman/Git_Projects/Excavator_Control/nrf52840dk_nrf52840.overlay
