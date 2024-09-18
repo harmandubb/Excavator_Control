@@ -23,12 +23,6 @@ extern "C" {
 
 //#defines
 
-
-// Grouping the motor pins for the excavator together 
-#define BUCKET_SENS ()
-#define ARM_SENS ()
-#define BOOM_SENS ()
-
 #define NUM_SENSORS (3)
 
 //Struct definitions

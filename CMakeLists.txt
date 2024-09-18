@@ -11,4 +11,6 @@ target_sources(app PRIVATE
         src/sensor.h
         src/adc.c
         src/adc.h
+        src/PID.c
+        src/PID.h
         )
