@@ -22,6 +22,9 @@ extern "C" {
 
 //#defines
 
+//variables 
+extern uint64_t last_time;
+
 //Struct definitions
 typedef struct {
     float Kp;  // Proportional gain
@@ -35,7 +38,9 @@ typedef struct {
 
 // Function prototypes
 void PID_Init(PIDController *pid, float Kp, float Ki, float Kd, float integral_min, float integral_max);
-float PID_Compute(PIDController *pid, float setpoint, float measured_value, float dt);
+float PID_Compute(PIDController *pid, float setpoint, float measured_value, float dt);\
+void timer_setup(void);
+uint64_t get_elapsed_time(void);
 
 
 #ifdef __cplusplus

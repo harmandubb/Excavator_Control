@@ -26,6 +26,7 @@ int main(void)
 
         //flags 
         extern bool adcFinished; 
+        extern uint64_t last_time;
 
         gpio1_dt = DEVICE_DT_GET(GPIO1_PORT);
         if (gpio1_dt == NULL) {
@@ -77,6 +78,8 @@ int main(void)
 
         while(!adcFinished);
         LOG_INF("ADC INITALIZATION DONE\n"); 
+
+        PID_timer_setup();
 
 
 
