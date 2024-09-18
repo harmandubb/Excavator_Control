@@ -4,6 +4,9 @@ LOG_MODULE_REGISTER(ADC, LOG_LEVEL_INF);
 
 //Global Variables
 
+//flag definitions 
+bool adcFinished = true; 
+
 /**
  * @brief Initializes and sets up x ADC channels.
  * 
@@ -62,4 +65,22 @@ int initADCChannels(struct adc_dt_channels *adc_channels){
 
     LOG_INF("All ADC channels initialized and set up successfully");
     return 0;  // Return the initialized channels on success
+};
+
+/** @brief adc callback function after each sampling
+ * 
+ * 
+ *  @param device ptr to the device bonding 
+ *  @param sequence ptr to the sequence data structure 
+ *  @param sampling_index what number of sample is done where this callback should be called
+ *  
+ *  @return the action the adc will take next of enum adc_actoin
+*/
+
+enum adc_action my_adc_sequence_callback(const struct device *dev, const struct adc_sequence *sequence, uint16_t sampling_index){
+    //set the adc done flag 
+    adcFinished = true; 
+
+    return ADC_ACTION_FINISH;
+    
 };

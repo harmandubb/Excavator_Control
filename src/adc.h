@@ -24,6 +24,9 @@ extern "C" {
 
 
 //#defines
+#define NUM_ADC_CHANNELS (3)
+#define ADC_BUFFER_SIZE (NUM_ADC_CHANNELS*2)
+
 struct adc_dt_channels {
     struct adc_dt_spec channel_0;
     struct adc_dt_spec channel_1;
@@ -35,8 +38,12 @@ struct adc_dt_channels {
 
 //Struct definitions
 
+//Variable Definitions
+extern bool adcFinished;
+
 // Function prototypes
 int initADCChannels(struct adc_dt_channels *adc_channels);
+enum adc_action my_adc_sequence_callback(const struct device *dev, const struct adc_sequence *sequence, uint16_t sampling_index);
 
 
 #ifdef __cplusplus
