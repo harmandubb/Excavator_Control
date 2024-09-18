@@ -21,6 +21,8 @@ const struct device *gpio1_dt;
 
 int main(void)
 {
+        int err = 0; 
+        
         gpio1_dt = DEVICE_DT_GET(GPIO1_PORT);
         if (gpio1_dt == NULL) {
                 LOG_ERR("Failed to get GPIO device binding\n");
@@ -33,6 +35,9 @@ int main(void)
 
         motor_pwm_specs_t motors_pwm = initArmMotors(gpio1_dt,cp1_arr, cp2_arr,NUM_ARM_MOTORS);
 
+        const struct device *adc_dev = DEVICE_DT_GET(DT_NODELABEL(adc));
+
+        err = initADCChannels();
 
 
         return 0;

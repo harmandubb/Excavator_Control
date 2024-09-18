@@ -24,6 +24,11 @@ extern "C" {
 
 
 //#defines
+struct adc_dt_channels {
+    struct adc_dt_spec channel_0;
+    struct adc_dt_spec channel_1;
+    struct adc_dt_spec channel_2;
+};
 
 
 // Grouping the motor pins for the excavator together 
@@ -31,6 +36,7 @@ extern "C" {
 //Struct definitions
 
 // Function prototypes
+int initADCChannels();
 
 
 #ifdef __cplusplus

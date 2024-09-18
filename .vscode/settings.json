@@ -7,6 +7,9 @@
         "gpio.h": "c",
         "motor.h": "c",
         "pwm.h": "c",
-        "log.h": "c"
+        "log.h": "c",
+        "sensor.h": "c",
+        "types.h": "c",
+        "adc.h": "c"
     }
 }
