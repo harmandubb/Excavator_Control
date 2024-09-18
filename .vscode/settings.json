@@ -10,6 +10,7 @@
         "log.h": "c",
         "sensor.h": "c",
         "types.h": "c",
-        "adc.h": "c"
+        "adc.h": "c",
+        "devicetree.h": "c"
     }
 }

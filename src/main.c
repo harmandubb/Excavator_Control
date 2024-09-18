@@ -5,6 +5,7 @@
 #include <zephyr/devicetree.h>
 
 #include "motor.h"
+#include "adc.h"
 
 #define GPIO0_PORT DT_NODELABEL(gpio0)
 #define GPIO1_PORT DT_NODELABEL(gpio1)
@@ -22,7 +23,7 @@ const struct device *gpio1_dt;
 int main(void)
 {
         int err = 0; 
-        
+
         gpio1_dt = DEVICE_DT_GET(GPIO1_PORT);
         if (gpio1_dt == NULL) {
                 LOG_ERR("Failed to get GPIO device binding\n");
@@ -37,7 +38,21 @@ int main(void)
 
         const struct device *adc_dev = DEVICE_DT_GET(DT_NODELABEL(adc));
 
-        err = initADCChannels();
+        struct adc_dt_channels adc_channels;  
+        err = initADCChannels(&adc_channels);
+        if (err < 0) {
+                LOG_ERR("Failed to initialize ADC channels");
+        } else {
+                LOG_INF("ADC channels successfully initialized");
+        }
+
+        // struct adc_sequence_options opts = {
+        //         .interval_us = 0,
+        //         .callback = my_adc_sequence_callback,
+        //         .user_data = NULL, 
+        //         .extra_samplings = 0,
+                
+        // };
 
 
         return 0;

@@ -36,7 +36,7 @@ struct adc_dt_channels {
 //Struct definitions
 
 // Function prototypes
-int initADCChannels();
+int initADCChannels(struct adc_dt_channels *adc_channels);
 
 
 #ifdef __cplusplus
